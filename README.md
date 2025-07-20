@@ -5,3 +5,6 @@ Following commands can be used to compile and run an openmp program.
   ./a.out
 Following command is required to compile the sobel filter file.
   g++ 12_sobel_filter.cpp -fopenmp `pkg-config --cflags --libs opencv4`
+To change number of threads, use the following command in terminal.
+  export OMP_NUM_THREADS=count 
+where, count the number of threads you want to use in the program.  
