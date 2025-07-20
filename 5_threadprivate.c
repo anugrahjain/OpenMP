@@ -1,15 +1,10 @@
 #include <omp.h>
 #include <stdio.h>
-
 int tid ;
-
 #pragma omp threadprivate( tid )
-
-int main( int *argc, char *argv[] )
+void main()
 {
-
 int numt ;
-
 #pragma omp parallel default( shared )
 {
 tid = omp_get_thread_num() ;
@@ -22,4 +17,3 @@ numt = omp_get_num_threads() ;
 #pragma omp parallel default( shared )
 printf( "Hello World from thread %d of %d.\n", tid, numt ) ;
 }
-
