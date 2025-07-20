@@ -33,7 +33,7 @@ void linear_regression(double *X, double *Y, double *w, double *b) {
     }
 }
 
-int main() {
+void main() {
     srand(time(0));  // Seed for randomness
 
     // Allocate memory for large dataset
@@ -65,6 +65,5 @@ int main() {
     free(X);
     free(Y);
 
-    return 0;
 }
 
