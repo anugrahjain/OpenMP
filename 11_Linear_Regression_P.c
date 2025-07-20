@@ -29,8 +29,8 @@ void parallel_linear_regression(double *X, double *Y, double *w, double *b, int 
             for (int i = 0; i < N; i++) {
                 double y_pred = (*w) * X[i] + (*b);
                 double error = Y[i] - y_pred;
-dw_private += (-2.0 * X[i] * error) / N;
-db_private += (-2.0 * error) / N;
+                dw_private += (-2.0 * X[i] * error) / N;
+                db_private += (-2.0 * error) / N;
             }
 
             // Reduce thread-local results into global variables
@@ -47,7 +47,7 @@ db_private += (-2.0 * error) / N;
     }
 }
 
-int main() {
+void main() {
 
     // Allocate memory
     double *X = (double *)malloc(N * sizeof(double));
@@ -87,6 +87,4 @@ int main() {
     free(X);
     free(Y);
 
-    return 0;
 }
-
