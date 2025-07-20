@@ -1,6 +1,6 @@
 #include <omp.h>
 #include <stdio.h>
-int main( int *argc, char *argv[] )
+void main()
 {
 /* Declare numt and tid outside parallel block */
 int numt, tid;
