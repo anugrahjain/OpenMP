@@ -5,7 +5,7 @@ int tid ;
 
 #pragma omp threadprivate( tid )
 
-int main( int *argc, char *argv[] )
+void main()
 {
 
 int numt ;
@@ -26,4 +26,3 @@ printf( "Hello World from thread %d of %d.\n", tid, numt ) ;
 }
 
 }
-
