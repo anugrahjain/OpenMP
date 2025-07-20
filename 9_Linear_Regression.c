@@ -29,7 +29,7 @@ void linear_regression(double X[], double Y[], double *w, double *b) {
     }
 }
 
-int main() {
+void main() {
     // Sample dataset: (X, Y) pairs
     double X[N] = {1, 2, 3, 4, 5};
     double Y[N] = {2, 4, 6, 8, 10};  // y = 2x (perfect line)
@@ -44,5 +44,4 @@ int main() {
     printf("Final values after training:\n");
     printf("w = %f, b = %f\n", w, b);
 
-    return 0;
 }
