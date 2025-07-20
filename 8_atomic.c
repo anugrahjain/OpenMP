@@ -27,8 +27,8 @@ Supported Operations with omp atomic
 4. Comparison and Assignment
 
     Assignment of results based on a comparison:
-        x = (x < expr) ? expr : x; (atomic minimum)
-        x = (x > expr) ? expr : x; (atomic maximum)
+        x = (x > expr) ? expr : x; (atomic minimum)
+        x = (x < expr) ? expr : x; (atomic maximum)
 */
 
 #include <stdio.h>
