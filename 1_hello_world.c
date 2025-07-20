@@ -1,12 +1,9 @@
 #include<stdio.h>
 #include<omp.h>
-
-int main( int *arg, char *argv[] )
+void main()
 {
-
 #pragma omp parallel
 {
 printf( "Hello World!\n") ;
 }
-return 0;
 }
