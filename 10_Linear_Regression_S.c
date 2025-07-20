@@ -34,7 +34,6 @@ void linear_regression(double *X, double *Y, double *w, double *b) {
 }
 
 void main() {
-    srand(time(0));  // Seed for randomness
 
     // Allocate memory for large dataset
     double *X = (double *)malloc(N * sizeof(double));
