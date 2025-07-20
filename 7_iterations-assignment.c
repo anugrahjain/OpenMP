@@ -18,5 +18,4 @@ a[j] = 1 ;
 printf( "Thread %d, iteration %d\n", tid, j ) ;
 }
 }
-return 0;
 }
