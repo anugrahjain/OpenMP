@@ -49,7 +49,7 @@ void apply_sobel_openmp(unsigned char* input, unsigned char* output, int rows, i
     }
 }
 
-int main() {
+void main() {
     // Load grayscale image
     Mat gray_img = imread("image.jpg", IMREAD_GRAYSCALE);
     if (gray_img.empty()) {
@@ -82,6 +82,4 @@ int main() {
     cout << "OpenMP Execution Time  : " << time_omp << " ms" << endl;
     cout << "Speedup (Serial / OpenMP) : " << (time_serial / time_omp) << "x" << endl;
 
-    return 0;
 }
-
